@@ -226,7 +226,7 @@ def create_excel_roster(year, roster, team_members, file_name='Media_Team_Roster
                 cell = sheet.cell(row=note_row + 1, column=4)
                 cell.alignment = Alignment(wrap_text=True)
 
-
+                print(f'Cell Value at Row {note_row + 1}, Column 4: {cell.value}')
 
                 if cell.value:
                   if 'CAMERA' in cell.value.upper():
